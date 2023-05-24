@@ -40,14 +40,17 @@ fetch("https://randomuser.me/api/?results=53").then((apidata)=>{
 /*
 function that should be counting the number for the count per page (10) which would
 calculate the numOfPages with Math ceiling to get the data.length divided by numCountPerPage
+slice should be slicing the data into 10 piece increments 
 */
 function Pages(data){
     let numCountPerPage = 10;
     let currentPage = 1;
-    let numOfPages = Math.ceil(data.length / numCountPerPage);
+    let newData1 = data.slice(0,10);
+    let numOfPages = Math.ceil(newData1.length / numCountPerPage);
     for(let i=1; i<=numOfPages; i++)  {
         let startingPoint = (currentPage - 1)*numCountPerPage;
         let endingPoint = startingPoint + numCountPerPage;
+       
     }
 }
 
