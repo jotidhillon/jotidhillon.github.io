@@ -2,7 +2,7 @@
 //CSIS 3380 - 002 Full Stack Web Development with Javascript
 //300348539
 
-//First function fetches data out of the data out of the randomuser api
+//First function fetches data out of the randomuser api
 function fetchData() {
 fetch("https://randomuser.me/api/?results=53").then((apidata)=>{
     
